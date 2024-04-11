@@ -26,6 +26,9 @@ Reference:  Richard N. Zare「Angular momentum」, D. M. Brink「Angular momentu
 \end{eqnarray}
 ```
 ## 3DHO-multipole.py
+Evaluation of matrix element of multipole operator in 3-dimensional harmonic oscillator basis
+
+
 Reference: J. D. TALMAN, Nuclear Physics, A 141 (1970).
 ```math
 \begin{eqnarray}
