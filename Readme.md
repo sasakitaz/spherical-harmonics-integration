@@ -7,9 +7,10 @@ Numerical integration methods takes much longer time than analytical methods, so
 
 ## 3Y.py
 Reference:  Richard N. Zare「Angular momentum」, D. M. Brink「Angular momentum」 etc.
-
-$$ \Braket{l_1, k_1|Y_{l_2, k_2} (\theta, \phi)|l_3, k_3} = \int \sin \theta \mathrm{d} \phi \, \mathrm{\phi} Y_{l_1, k_1}^* (\theta, \phi) Y_{l_2, k_2} (\theta, \phi) Y_{l_3, k_3}^* (\theta, \phi) 
-= (-1)^{-m}\sqrt{(2l' + 1)(2l + 1)}
+```math
+\begin{eqnarray}
+\Braket{l', m'|Y_{L, M) (\theta, \phi)|l, m} &=& \int \sin \theta \mathrm{d} \phi \, \mathrm{\phi} Y_{l', m'}^* (\theta, \phi) Y_{L, M} (\theta, \phi) Y_{l', m'} (\theta, \phi)  
+&=& (-1)^{-m}\sqrt{(2l' + 1)(2l + 1)}
                 \left(
                     \begin{array}{rrr}
                       l' & L & l \\
@@ -22,13 +23,15 @@ $$ \Braket{l_1, k_1|Y_{l_2, k_2} (\theta, \phi)|l_3, k_3} = \int \sin \theta \ma
                       0 & 0 & 0
                     \end{array}
                 \right)
-                \delta_{q', q} $$
-
+                \delta_{q', q}
+\end{eqnarray}
+```
 ## 3DHO-multipole
-Reference: J. D. TALMAN, Nuclear Physics, A 141 (1970)
-
-$$ \Braket{n_1, l_1, m_1|r^{l_2} Y_{l_2, k_2} (\theta, \phi)|n_3, l_3, m_3}
- = (-1)^{m' + q}
+Reference: J. D. TALMAN, Nuclear Physics, A 141 (1970).
+```math
+\begin{eqnarray}
+\Braket{q', l', m'|r^{L + 2S} Y_{L, M} (\theta, \phi)|q, l, m}
+ &= (-1)^{m' + q}
                 \left(
                     \begin{array}{rrr}
                       l' & L & l \\
@@ -42,4 +45,6 @@ $$ \Braket{n_1, l_1, m_1|r^{l_2} Y_{l_2, k_2} (\theta, \phi)|n_3, l_3, m_3}
                     \end{array}
                 \right)
                 \left[ \frac{2^s (2l + 1)(2l' + 1)q'!(2l' L 2q' + 1)!!}{2^{q' + 2S + L}s!(2l + 2q + 1)!!} \right] \\
-                \times \sum_{\nu} \frac{(-1)^{\nu}(L + l + l' + 2\nu + 2S + 1)!!(1/2(L + l' - l) + S + \nu)}{(1/2(L + l' - l) + \nu + S - q)!\nu!(q' - \nu)!(2l' + 2\nu + 1)!!} $$
+                &\times \sum_{\nu} \frac{(-1)^{\nu}(L + l + l' + 2\nu + 2S + 1)!!(1/2(L + l' - l) + S + \nu)}{(1/2(L + l' - l) + \nu + S - q)!\nu!(q' - \nu)!(2l' + 2\nu + 1)!!}
+\end{eqnarray}
+```
