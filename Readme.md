@@ -25,7 +25,7 @@ Reference:  Richard N. Zare「Angular momentum」, D. M. Brink「Angular momentu
                 \right)
 \end{eqnarray}
 ```
-## 3DHO-multipole
+## 3DHO-multipole.py
 Reference: J. D. TALMAN, Nuclear Physics, A 141 (1970).
 ```math
 \begin{eqnarray}
