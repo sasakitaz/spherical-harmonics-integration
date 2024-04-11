@@ -9,7 +9,7 @@ Numerical integration methods takes much longer time than analytical methods, so
 Reference:  Richard N. Zare「Angular momentum」, D. M. Brink「Angular momentum」 etc.
 ```math
 \begin{eqnarray}
-\Braket{l', m'|Y_{L, M} (\theta, \phi)|l, m} &=& \int \sin \theta \mathrm{d} \phi \, \mathrm{\phi} Y_{l', m'}^* (\theta, \phi) Y_{L, M} (\theta, \phi) Y_{l', m'} (\theta, \phi)  \\
+\Braket{l', m'|Y_{L, M} (\theta, \phi)|l, m} &=& \int \sin \theta \mathrm{d} \theta \mathrm{d} \phi \, Y_{l', m'}^* (\theta, \phi) Y_{L, M} (\theta, \phi) Y_{l', m'} (\theta, \phi)  \\
 &=& (-1)^{-m}\sqrt{(2l' + 1)(2l + 1)}
                 \left(
                     \begin{array}{rrr}
